@@ -4,7 +4,26 @@ import json
 
 
 def lambda_handler(event, context):
+    num1= event["num1"]
+    num2= event["num2"]
+
+    
+
+def add(num1,num2):
+    return num1 + num2    
+
+def sub(num1,num2):
+    return num1 - num2
+
+def multiply(num1,num2):
+    return num1 * num2   
+
+print(add(num1,num2))
+print(sub(num1,num2))
+print(multiply(num1,num2))                 
+
     """Sample pure Lambda function
+
 
     Parameters
     ----------
@@ -25,6 +44,7 @@ def lambda_handler(event, context):
         Return doc: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-lambda-proxy-integrations.html
     """
 
+
     # try:
     #     ip = requests.get("http://checkip.amazonaws.com/")
     # except requests.RequestException as e:
@@ -33,10 +53,12 @@ def lambda_handler(event, context):
 
     #     raise e
 
-    return {
-        "statusCode": 200,
-        "body": json.dumps({
-            "message": "hello world",
+
+   # return {
+       # "statusCode": 200,
+       # "body": json.dumps({
+        #    "message": "hello world",
             # "location": ip.text.replace("\n", "")
-        }),
-    }
+   #     }),
+  #  }
+
