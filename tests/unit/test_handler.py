@@ -17,7 +17,7 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(app.sub(-1,-1),0)
 
     def test_multiply(self):
-        self.assertEqual(app.multiply(10,5),5)
+        self.assertEqual(app.multiply(10,5),50)
         self.assertEqual(app.multiply(-1,1),-1)
         self.assertEqual(app.multiply(-1,-1),1) 
 
